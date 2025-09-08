@@ -1,0 +1,10 @@
+services:
+  app:
+    build: ./app
+    ports:
+      - 3000:3000
+
+  studio:
+    build: ./studio
+    ports:
+      - 3333:80

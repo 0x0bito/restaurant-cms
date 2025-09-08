@@ -1,0 +1,28 @@
+**/node_modules
+
+**/.next/
+**/out/
+**/build
+**/dist
+
+.DS_Store
+*.pem
+
+npm-debug.log*
+
+**/.env*
+!.env.example
+
+*.tsbuildinfo
+next-env.d.ts
+
+**/.sanity
+
+**/logs
+*.log
+
+# Typescript
+*.tsbuildinfo
+
+# Dotenv and similar local-only files
+*.local
