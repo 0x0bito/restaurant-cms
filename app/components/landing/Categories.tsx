@@ -41,8 +41,8 @@ export default function Categories({
               );
             })}
           </CarouselContent>
-          <CarouselPrevious className="max-sm:top-1/2 max-sm:left-2 max-sm:z-10 max-sm:block max-sm:-translate-y-1/2" />
-          <CarouselNext className="max-sm:top-1/2 max-sm:right-2 max-sm:z-10 max-sm:block max-sm:-translate-y-1/2" />
+          <CarouselPrevious className="hidden! max-sm:top-1/2 max-sm:left-2 max-sm:z-10 max-sm:block! max-sm:-translate-y-1/2" />
+          <CarouselNext className="hidden! max-sm:top-1/2 max-sm:right-2 max-sm:z-10 max-sm:block max-sm:-translate-y-1/2" />
         </Carousel>
       </div>
     </div>

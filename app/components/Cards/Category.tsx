@@ -21,13 +21,13 @@ export default function Category({
       }}
     >
       {url ? (
-        <div className="aspect-square w-full overflow-hidden rounded-xl">
+        <div className="w-full overflow-hidden rounded-xl">
           <Image
             src={url}
             alt={title}
             width={300}
             height={300}
-            className="mx-auto block object-cover transition-all group-hover:scale-110"
+            className="mx-auto block aspect-square transition-all group-hover:-translate-y-2"
             priority={false}
           />
         </div>
