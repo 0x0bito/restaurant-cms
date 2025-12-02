@@ -69,13 +69,21 @@ export async function getRecipesByCategory(slug: string, page: number = 1, limit
     }
   }`;
 
-  return sanityFetch({ query: query, params: { slug, start, end }, tags: ["recipe", "category"] });
+  return sanityFetch({
+    query: query,
+    params: { slug, start, end },
+    tags: ["recipe", "category"],
+  });
 }
 
 export async function getTotalRecipesByCategory(slug: string) {
   const query = groq`count(*[_type == "recipe" && references(*[_type == "category" && slug.current == $slug]._id)])`;
 
-  return sanityFetch({ query: query, params: { slug }, tags: ["recipe", "category"] });
+  return sanityFetch({
+    query: query,
+    params: { slug },
+    tags: ["recipe", "category"],
+  });
 }
 
 export async function getRecipeBySlug(slug: string) {
@@ -94,7 +102,11 @@ export async function getRecipeBySlug(slug: string) {
     price
   }`;
 
-  return sanityFetch({ query: query, params: { slug }, tags: [`recipe:${slug}`] });
+  return sanityFetch({
+    query: query,
+    params: { slug },
+    tags: [`recipe:${slug}`],
+  });
 }
 
 export async function getHeroSection() {
@@ -142,7 +154,18 @@ export async function getClientReviews() {
 }
 
 export async function getFooterSocialLinks() {
-  const query = groq`*[_type == "footer"][0]`;
+  const query = groq`*[_type == "footer"][0]{
+      _id,
+      "logo": {
+        "url": logo.asset->url,
+        alt
+      },
+      socialLinks[]{
+        platform,
+        url
+      }
+    }
+`;
 
   return sanityFetch({ query: query, tags: ["footer"] });
 }

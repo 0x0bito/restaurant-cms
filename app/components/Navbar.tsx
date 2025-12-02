@@ -13,7 +13,7 @@ export default async function Navbar() {
     <>
       <nav className="flex items-center justify-between">
         <Link href={"/"}>
-          <Image src={data.logo.url} alt="LOGO" width={60} height={60} />
+          <Image src={data.logo.url} alt="LOGO" width={35} height={35} />
         </Link>
         <ul className="flex justify-center gap-7 justify-self-start max-md:hidden">
           {navbarLinks.map((link) => {

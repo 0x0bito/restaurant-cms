@@ -69,6 +69,7 @@ export type clientReviewsType = {
 export type footerType = {
   _id: string;
   socialLinks: socialLink[];
+  logo: { url: string; alt: string | undefined | null };
 };
 
 export type contactType = {
