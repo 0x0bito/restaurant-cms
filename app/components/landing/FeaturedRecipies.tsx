@@ -38,10 +38,9 @@ export default async function FeaturedRecipies() {
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-20 text-center">
       <div className="flex flex-col gap-5">
-        <h2 className="text-5xl font-semibold">Simple and tasty recipes</h2>
+        <h2 className="text-5xl font-semibold">Recettes simples et savoureuses</h2>
         <p className="mx-auto leading-7 text-gray-500 md:max-w-1/2">
-          Indulge in our collection of simple yet flavorful dishes, crafted with fresh ingredients
-          and a touch of Moroccan tradition. Perfect for a quick bite or a satisfying meal.
+          Des plats frais et pleins de saveurs.
         </p>
       </div>
       <Suspense fallback={<LoadingState />}>
