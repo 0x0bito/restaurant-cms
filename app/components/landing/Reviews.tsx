@@ -37,9 +37,9 @@ export default async function Reviews() {
   return (
     <div className="mx-auto flex max-w-7xl flex-col gap-20 text-center">
       <div className="flex flex-col gap-5">
-        <h2 className="text-5xl font-semibold">What Our Clients Say</h2>
+        <h2 className="text-5xl font-semibold">Avis de nos clients</h2>
         <p className="leading-7 text-gray-500">
-          Hear from our satisfied customers about their experiences and how we’ve made a difference.
+          Leurs expériences et leurs retours en quelques mots.
         </p>
       </div>
 
