@@ -27,7 +27,7 @@ export default function Category({
             alt={title}
             width={300}
             height={300}
-            className="mx-auto block aspect-square transition-all group-hover:-translate-y-2"
+            className="mx-auto block transition-all group-hover:-translate-y-2"
             priority={false}
           />
         </div>
