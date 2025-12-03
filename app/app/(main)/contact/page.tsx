@@ -13,10 +13,9 @@ export default async function Contact() {
       <div className="container mx-auto max-w-5xl px-4 py-12">
         {/* Header */}
         <div className="mb-16 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-black md:text-5xl">Contact Us</h1>
+          <h1 className="mb-4 text-4xl font-bold text-black md:text-5xl">Contactez-nous</h1>
           <p className="mx-auto max-w-2xl text-lg text-gray-700">
-            We&apos;d love to hear from you! Get in touch with us for reservations, inquiries, or
-            just to say hello.
+            Pour toute question ou réservation, n’hésitez pas à nous écrire.
           </p>
         </div>
 
