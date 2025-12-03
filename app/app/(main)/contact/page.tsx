@@ -94,36 +94,7 @@ export default async function Contact() {
             </div>
           </div>
         </div>
-
-        {/* Social Media Section */}
-        <Separator className="mt-28" />
-        <div className="pt-12">
-          <h3 className="mb-6 text-center text-2xl font-semibold text-black">Follow Us</h3>
-          <div className="flex justify-center space-x-12">
-            {data.socialMedia.map((ele) => (
-              <Link
-                key={ele.platform}
-                href={ele.link || "#"}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="group flex flex-col items-center"
-              >
-                {ele.icon ? (
-                  <Image
-                    src={ele.icon}
-                    alt={ele.platform}
-                    width={38}
-                    height={38}
-                    priority={false}
-                  />
-                ) : null}
-                <span className="mt-2 text-sm font-medium text-gray-700 capitalize group-hover:text-black">
-                  {ele.platform}
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
+        
       </div>
     </div>
   );
